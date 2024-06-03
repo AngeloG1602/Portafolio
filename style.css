@@ -1,17 +1,97 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #222;
-}
-.container {
-    
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-div {
-    background-color: blue;
-    width: 10rem;
-    margin: 1rem;
-    border: double5px;
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
 }
+
+.header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.header h1 {
+   margin-bottom: 10px;
+}
+
+.encabezado {
+   text-align: center;
+}
+
+.banner {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.banner a {
+   color: #fff;
+   text-decoration: none;
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 20px 0;
+}
+
+section {
+   background-color: #999;
+   padding: 20px;
+   margin: 10px;
+   border-radius: 5px;
+   flex-basis: 30%;
+   color: #fff;
+}
+
+section#sobre-mi {
+   flex-basis: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+section#sobre-mi img {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+}
+
+section#servicios {
+   flex-basis: 35%;
+}
+
+section#servicios > div {
+   display: flex;
+   justify-content: space-between;
+}
+
+section#servicios > div > div {
+   background-color: #555;
+   padding: 10px;
+   flex-basis: 48%;
+}
+
+section#proyectos {
+   flex-basis: 30%;
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
